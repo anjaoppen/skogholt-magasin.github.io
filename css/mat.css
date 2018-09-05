@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "avenir next";/* husk og finne en backup font*/
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav > a {
+    text-transform: uppercase;
+    text-decoration-line: none; 
+    color: rgb(170, 170, 170); 
+    padding:  20px 60px 10px 60px; /*spørr om denne linjen kan gjøres mer flex*/
+}
+
+a:hover{
+    color: orange;
+}
