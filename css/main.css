@@ -161,21 +161,24 @@ p {
     margin: auto;
 } */
 
-
-
 /*section 2 */
+
+s2 {
+
+    /*burde kankeje brukes til noe evt bredden*/
+}
 
 .høstensGaver {
    
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
 
 }
 
 .høstbilde {
 
-    border: 4px solid white;
     min-width: 350px;
     min-height: 315px;
     margin: 0 auto;
@@ -183,19 +186,119 @@ p {
 }
 
 
-bål {
+/*her starter overlay koden */
+.wrap {
 
-    background-image: url("");
+    
+    position: relative;
+    /*width: 50%; */
+    
 }
 
-hengekoye {
+.bol {
+    background-image: url("../Images/bål.jpg");
+    background-size: cover;
+    transition: 2s ease;
+    display: block;
+    width: 100%;
+    height: auto;
 
-    background-image: url("");
+
 }
 
-par {
+.overlay {
+    position: absolute;
+    bottom: 0; 
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    /*font-size: 20px;*/
+    padding: 20px;
+    text-align: center;
 
-    background-image: url("");
+}
+
+.wrap:hover .overlay {
+
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tekst {
+
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20%;
+}
+
+/*her slutter overlay koden */
+
+
+/*
+.bål {
+
+    background-image: url("../Images/bål.jpg");
+    background-size: cover;
+    transition: 2s ease;
+
+
+}
+
+
+.bål:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 2s ease;
+
+}*/
+
+.hengekoye {
+
+    background-image: url("../Images/hengekoye.jpg");
+    background-size: cover;
+    /*transition: 2s ease;*/
+}
+
+/*.hengekoye:hover {
+
+  
+
+} */
+
+.par {
+
+    background-image: url("../Images/par.jpg");
+    background-size: cover;
+    /*transition: 2s ease;*/
+}
+
+/*.par:hover {
+
+   
+
+}
+
+
+
+
+
+
+/*section 3 mest lest*/
+
+.s3 {
+
+    padding-top: 170px;
+
+
+
+
+
+
 }
 
 
