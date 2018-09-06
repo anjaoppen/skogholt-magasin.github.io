@@ -6,18 +6,37 @@ body {
     
     margin-top: 600px;
     font-family: "avenir next";/* husk og finne en backup font*/
-    font-weight: 100;
-    font-size: 1rem;
+    font-weight: 200;
     margin: 0;
-    background-color: #1d1413;
-    color: gray;
+    background-color: #020203;
+    color: #E19728;
     
 }
 
+
+main {
+    /*max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Feller h1 for alle på siden*/ 
+
 h1 {
+    color: white;
     text-transform: uppercase;
     font-weight: 100;
+    height: 100px;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    
 }
+
+
+
 
 /*p {
     font-family: avenir; /*Mengde teskt skal være i en annen font
@@ -27,25 +46,26 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    position: sticky;
+    position: sticky; /*hvordan få denne til og følge med nedover */
     top: 0;
 }
 
 nav > a {
     text-transform: uppercase;
     text-decoration-line: none; 
-    color: rgb(170, 170, 170); 
+    color: #E19728;
     padding:  20px 60px 10px 60px;
     transition: 0.5s;
 }
 
 a:hover{
-    color: orange;
+    color: gray;
 }
 
+/* toppen på landingsside*/
 header {
     height: 100vh;
-    background-image: url("../Images/lys3.jpg");
+    background-image: url("../Images/ny-header.png");
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
@@ -55,7 +75,7 @@ header {
 
 header > h1 {
 
-    transition: 4s;
+    /*transition: 4s;*/
     align-content: center;
     font-size: 10rem;
     color:white;
@@ -66,22 +86,122 @@ header > h1 {
 
 } 
 
+
+/*introduksjons tekst i toppen*/
+
+.introduksjontekst {
+
+
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: center;
+
+
 }
 
-main {
-    /*max-width: 1024px;
-    margin: 0 auto;
-    padding: 10px;*/
-    margin: 0;
-    padding: 0;
+
+
+/*introduksjons bokser section 1 */
+
+
+.s1 {
+   
+    
+    padding-top: 170px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 160px;
+
+    /*background-image: url("../Images/ekkorn.png");
+    width: 80vw;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; */
+
+
 }
 
+.intoduksjon {
 
-/*.s1 > article {
-    width: 10px;
+    border: 1px solid #1d1413;
+    outline: 1px solid #bfb196;
+    outline-offset: -10px;
+    background-color: #1d1413;
+    height: 350px;
+    width: 270px;
+    /*min-width: 350px;
+    min-height: 315px; */
+    margin: 0 auto; 
+    
+    
+}
 
-    border: 4px solid white;   
+h3 {
+    padding-top: 70px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #bfb196;
+    
+}
+
+p {
+    color: #bfb196;
+    margin: 25px 20px;
+    text-align: center;
+    line-height: 150%;
+
+}
+
+/*img {
+    
+    width: 80%;
+    position: relative;
+    display: block;
+    margin: auto;
 } */
+
+
+
+/*section 2 */
+
+.høstensGaver {
+   
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.høstbilde {
+
+    border: 4px solid white;
+    min-width: 350px;
+    min-height: 315px;
+    margin: 0 auto;
+
+}
+
+
+bål {
+
+    background-image: url("");
+}
+
+hengekoye {
+
+    background-image: url("");
+}
+
+par {
+
+    background-image: url("");
+}
+
+
+
+
+
 
 
 
@@ -90,7 +210,7 @@ main {
 @media (max-width: 1000px){
     
     header > h1 {
-        transition: 4s;
+        /*transition: 4s;*/
         font-size: 3rem;
         padding-top: 90px;
         
